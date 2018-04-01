@@ -7,20 +7,28 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule } from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+
 import { PitBosInOutComponent } from './components/pit-bos-in-out/pit-bos-in-out.component';
 import { PitBossBubbleComponent } from './components/pit-bos-in-out/components/pit-boss-bubble/pit-boss-bubble.component';
+
+import { ChartsModule } from 'ng2-charts';
+import { EventsStatusComponent } from './components/events-status/events-status.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PitBosInOutComponent,
-    PitBossBubbleComponent
+    PitBossBubbleComponent,
+    EventsStatusComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
