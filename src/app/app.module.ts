@@ -13,7 +13,8 @@ import { PitBosInOutComponent } from './components/pit-bos-in-out/pit-bos-in-out
 import { PitBossBubbleComponent } from './components/pit-bos-in-out/components/pit-boss-bubble/pit-boss-bubble.component';
 
 import { ChartsModule } from 'ng2-charts';
-import { EventsStatusComponent } from './components/events-status/events-status.component'
+import { EventsStatusComponent } from './components/events-status/events-status.component';
+import { ManPowerComponent } from './components/man-power/man-power.component'
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { EventsStatusComponent } from './components/events-status/events-status.
     AppComponent,
     PitBosInOutComponent,
     PitBossBubbleComponent,
-    EventsStatusComponent
+    EventsStatusComponent,
+    ManPowerComponent
   ],
   imports: [
     BrowserModule,

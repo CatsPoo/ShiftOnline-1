@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-events-status',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./events-status.component.css']
 })
 export class EventsStatusComponent implements OnInit {
+    @Input() eventsData         : [{ networkName: string, eventsValues: [number] }];
+    @Input() currentDate        : string;
+
 
     // lineChart
     public lineChartData:Array<any> = [
@@ -26,6 +29,7 @@ export class EventsStatusComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    if(!(this.currentDate.indexOf('/') >= 0)) console.log('events-status: currentData var dosent match the scheme')    
   }
 
 }
