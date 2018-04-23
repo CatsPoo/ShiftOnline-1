@@ -14,7 +14,8 @@ import { PitBossBubbleComponent } from './components/pit-bos-in-out/components/p
 
 import { ChartsModule } from 'ng2-charts';
 import { EventsStatusComponent } from './components/events-status/events-status.component';
-import { ManPowerComponent } from './components/man-power/man-power.component'
+import { ManPowerComponent } from './components/man-power/man-power.component';
+import { CommandmentsComponent } from './components/commandments/commandments.component'
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ManPowerComponent } from './components/man-power/man-power.component'
     PitBosInOutComponent,
     PitBossBubbleComponent,
     EventsStatusComponent,
-    ManPowerComponent
+    ManPowerComponent,
+    CommandmentsComponent
   ],
   imports: [
     BrowserModule,

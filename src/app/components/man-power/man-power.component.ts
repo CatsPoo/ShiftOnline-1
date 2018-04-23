@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-man-power',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./man-power.component.css']
 })
 export class ManPowerComponent implements OnInit {
+  @Input() manPowerStatistics   : {};
+  @Input() manPowerDetailed     : {};
+
   // Pie
   public pieChartLabels:string[] = ['חופש', 'אחרי משמרת', 'תורנויות', 'אחר', 'כוח אדם במחלקה'];
   public pieChartData:number[] = [10, 10, 5, 5, 20];
